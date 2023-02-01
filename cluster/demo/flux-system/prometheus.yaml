@@ -12,12 +12,12 @@ spec:
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: flux-system
-  namespace: flux-system
+  name: flux-system2
+  namespace: flux-system2
 spec:
   interval: 10m0s
   path: ./cluster/eks-devops-prod
   prune: true
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: prometheus
